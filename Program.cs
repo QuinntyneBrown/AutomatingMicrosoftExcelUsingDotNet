@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutomatingMicrosoftExcelUsingDotNet.Commands;
+using System;
 
 namespace AutomatingMicrosoftExcelUsingDotNet
 {
@@ -7,12 +8,13 @@ namespace AutomatingMicrosoftExcelUsingDotNet
         static int Main(string[] args)
         {
             return args.Length < 1 
-                ? new Program().ProcessArgs(args) 
-                : new Program().ProcessArgs(Console.ReadLine());
+                ? new Program().ProcessArgs(Console.ReadLine())
+                : new Program().ProcessArgs(args);
         }
 
         public int ProcessArgs(string[] args)
         {
+            new WorkbookOpenCommand().Run(args);
             return 1;
         }
 

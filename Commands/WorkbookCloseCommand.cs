@@ -7,12 +7,12 @@ namespace AutomatingMicrosoftExcelUsingDotNet.Commands
 
     public class WorkbookCloseCommand : IWorkbookCloseCommand
     {
-        public int run(BaseOptions optons)
+        public int Run(BaseOptions optons)
         {
             throw new NotImplementedException();
         }
 
-        public int run(string[] args)
+        public int Run(string[] args)
         {
             throw new NotImplementedException();
         }

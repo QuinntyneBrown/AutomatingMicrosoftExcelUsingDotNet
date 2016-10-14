@@ -4,7 +4,7 @@ namespace AutomatingMicrosoftExcelUsingDotNet.Contracts
 {
     public interface ICommand
     {
-        int run(string[] args);
-        int run(BaseOptions optons);
+        int Run(string[] args);
+        int Run(BaseOptions optons);
     }
 }
